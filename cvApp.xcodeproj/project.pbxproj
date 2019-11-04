@@ -17,6 +17,7 @@
 		5A6E92C02369B5DF00149A30 /* cvAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E92BF2369B5DF00149A30 /* cvAppUITests.swift */; };
 		5A6E92CE2369BD9F00149A30 /* CVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E92CD2369BD9F00149A30 /* CVViewController.swift */; };
 		5A6E92D02369CF3300149A30 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E92CF2369CF3300149A30 /* ExperienceViewController.swift */; };
+		5ACB06F823704F6B006B4A26 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACB06F723704F6B006B4A26 /* SkillsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		5A6E92C12369B5DF00149A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A6E92CD2369BD9F00149A30 /* CVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVViewController.swift; sourceTree = "<group>"; };
 		5A6E92CF2369CF3300149A30 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
+		5ACB06F723704F6B006B4A26 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				5A6E92AB2369B5DF00149A30 /* Info.plist */,
 				5A6E92CD2369BD9F00149A30 /* CVViewController.swift */,
 				5A6E92CF2369CF3300149A30 /* ExperienceViewController.swift */,
+				5ACB06F723704F6B006B4A26 /* SkillsViewController.swift */,
 			);
 			path = cvApp;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				5A6E92CE2369BD9F00149A30 /* CVViewController.swift in Sources */,
 				5A6E92D02369CF3300149A30 /* ExperienceViewController.swift in Sources */,
 				5A6E929E2369B5DD00149A30 /* AppDelegate.swift in Sources */,
+				5ACB06F823704F6B006B4A26 /* SkillsViewController.swift in Sources */,
 				5A6E92A02369B5DD00149A30 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
