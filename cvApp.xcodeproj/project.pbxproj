@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A65D4632371773200CE09FC /* ExperienceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A65D4622371773200CE09FC /* ExperienceViewCell.swift */; };
+		5A65D46523717B4800CE09FC /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A65D46423717B4800CE09FC /* Work.swift */; };
 		5A6E929E2369B5DD00149A30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E929D2369B5DD00149A30 /* AppDelegate.swift */; };
 		5A6E92A02369B5DD00149A30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E929F2369B5DD00149A30 /* SceneDelegate.swift */; };
 		5A6E92A22369B5DD00149A30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E92A12369B5DD00149A30 /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A65D4622371773200CE09FC /* ExperienceViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewCell.swift; sourceTree = "<group>"; };
+		5A65D46423717B4800CE09FC /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
 		5A6E929A2369B5DD00149A30 /* cvApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cvApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6E929D2369B5DD00149A30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A6E929F2369B5DD00149A30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,13 +112,15 @@
 				5A6E929D2369B5DD00149A30 /* AppDelegate.swift */,
 				5A6E929F2369B5DD00149A30 /* SceneDelegate.swift */,
 				5A6E92A12369B5DD00149A30 /* ViewController.swift */,
+				5A6E92CD2369BD9F00149A30 /* CVViewController.swift */,
+				5A6E92CF2369CF3300149A30 /* ExperienceViewController.swift */,
+				5A65D4622371773200CE09FC /* ExperienceViewCell.swift */,
+				5A65D46423717B4800CE09FC /* Work.swift */,
+				5ACB06F723704F6B006B4A26 /* SkillsViewController.swift */,
 				5A6E92A32369B5DD00149A30 /* Main.storyboard */,
 				5A6E92A62369B5DF00149A30 /* Assets.xcassets */,
 				5A6E92A82369B5DF00149A30 /* LaunchScreen.storyboard */,
 				5A6E92AB2369B5DF00149A30 /* Info.plist */,
-				5A6E92CD2369BD9F00149A30 /* CVViewController.swift */,
-				5A6E92CF2369CF3300149A30 /* ExperienceViewController.swift */,
-				5ACB06F723704F6B006B4A26 /* SkillsViewController.swift */,
 			);
 			path = cvApp;
 			sourceTree = "<group>";
@@ -268,8 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A65D46523717B4800CE09FC /* Work.swift in Sources */,
 				5A6E92A22369B5DD00149A30 /* ViewController.swift in Sources */,
 				5A6E92CE2369BD9F00149A30 /* CVViewController.swift in Sources */,
+				5A65D4632371773200CE09FC /* ExperienceViewCell.swift in Sources */,
 				5A6E92D02369CF3300149A30 /* ExperienceViewController.swift in Sources */,
 				5A6E929E2369B5DD00149A30 /* AppDelegate.swift in Sources */,
 				5ACB06F823704F6B006B4A26 /* SkillsViewController.swift in Sources */,
