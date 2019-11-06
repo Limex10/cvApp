@@ -24,6 +24,12 @@ class ExperienceViewCell: UITableViewCell {
         
     }
     
+   func setEducation(educations: Education){
+        CellImageView.image = educations.image
+        CellLabelTitle.text = educations.title
+        CellLabelDate.text = educations.date
+    }
+ 
 }
 
 
