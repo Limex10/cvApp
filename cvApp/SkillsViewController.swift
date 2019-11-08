@@ -9,12 +9,43 @@
 import UIKit
 
 class SkillsViewController: UIViewController {
-let backgroundImageView = UIImageView()
+    @IBOutlet weak var heartImageView: UIImageView!
+    @IBOutlet weak var ryuImageView: UIImageView!
+    
+    var heartImages: [UIImage] = []
+    var ryuImages: [UIImage] = []
+    
+    let backgroundImageView = UIImageView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setBackground()
+        heartImages = createImageArray(total: 24, imagePrefix: "heart")
+        ryuImages = createImageArray(total: 7, imagePrefix: "ryu")
         // Do any additional setup after loading the view.
     }
+    
+    func createImageArray(total: Int, imagePrefix: String) -> [UIImage] {
+        
+        var imageArray: [UIImage] = []
+        
+        for imageCount in 0..<total {
+            let imageName = "\(imagePrefix)-\(imageCount).png"
+            let image = UIImage(named: imageName)!
+            
+            imageArray.append(image)
+        }
+        
+        return imageArray
+    }
+    
+    func animate(imageView: UIImageView, images: [UIImage]){
+        imageView.animationImages = images
+        imageView.animationDuration = 1.0
+        imageView.animationRepeatCount = 1
+        imageView.startAnimating()
+    }
+    
     func setBackground() {
         view.addSubview(backgroundImageView)
         backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -27,6 +58,18 @@ let backgroundImageView = UIImageView()
         view.sendSubviewToBack(backgroundImageView)
     }
 
+    @IBAction func likeButtonTapped(_ sender: Any) {
+        animate(imageView: heartImageView, images: heartImages)
+    }
+    
+    @IBAction func ryuButtonTapped(_ sender: Any) {
+        animate(imageView: ryuImageView, images: ryuImages)
+    }
+    
+    @IBAction func dismissButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+        
+    }
     /*
     // MARK: - Navigation
 

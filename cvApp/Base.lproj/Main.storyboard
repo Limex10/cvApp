@@ -157,7 +157,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ebu-mb-gPQ" kind="show" id="Wh1-ba-XH3"/>
+                                    <segue destination="Ebu-mb-gPQ" kind="presentation" id="Wh1-ba-XH3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiO-ee-Bqa">
@@ -255,16 +255,75 @@
             <objects>
                 <viewController id="Ebu-mb-gPQ" customClass="SkillsViewController" customModule="cvApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ca5-VL-wn5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZBu-az-895">
+                                <rect key="frame" x="70" y="436" width="274" height="282"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPt-c4-Xwp">
+                                <rect key="frame" x="30" y="356" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HHs-kH-GUr"/>
+                                </constraints>
+                                <state key="normal" title="Animate"/>
+                                <connections>
+                                    <action selector="likeButtonTapped:" destination="Ebu-mb-gPQ" eventType="touchUpInside" id="wWq-iz-HBD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeO-qI-u2C">
+                                <rect key="frame" x="30" y="748" width="354" height="30"/>
+                                <state key="normal" title="Animate"/>
+                                <connections>
+                                    <action selector="ryuButtonTapped:" destination="Ebu-mb-gPQ" eventType="touchUpInside" id="XrE-if-osh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tm0-XQ-Nh5">
+                                <rect key="frame" x="330" y="20" width="54" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZlW-Lx-xfC"/>
+                                </constraints>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="dismissButton:" destination="Ebu-mb-gPQ" eventType="touchUpInside" id="sHW-8u-Rvq"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bIH-XA-s03">
+                                <rect key="frame" x="70" y="156" width="274" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="iKt-Kq-aEg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Tm0-XQ-Nh5" firstAttribute="top" secondItem="Xyi-BD-Fxy" secondAttribute="top" constant="20" id="2xq-No-YOM"/>
+                            <constraint firstItem="bIH-XA-s03" firstAttribute="leading" secondItem="Xyi-BD-Fxy" secondAttribute="leading" constant="70" id="3az-Fz-swR"/>
+                            <constraint firstItem="tPt-c4-Xwp" firstAttribute="top" secondItem="bIH-XA-s03" secondAttribute="bottom" constant="40" id="71w-qs-DVi"/>
+                            <constraint firstItem="tPt-c4-Xwp" firstAttribute="leading" secondItem="Xyi-BD-Fxy" secondAttribute="leading" constant="30" id="COn-LC-fKH"/>
+                            <constraint firstItem="Xyi-BD-Fxy" firstAttribute="trailing" secondItem="xeO-qI-u2C" secondAttribute="trailing" constant="30" id="INM-8S-HX0"/>
+                            <constraint firstItem="bIH-XA-s03" firstAttribute="top" secondItem="Xyi-BD-Fxy" secondAttribute="top" constant="156" id="Je1-1n-qgY"/>
+                            <constraint firstItem="xeO-qI-u2C" firstAttribute="leading" secondItem="Xyi-BD-Fxy" secondAttribute="leading" constant="30" id="Kqs-hk-58T"/>
+                            <constraint firstItem="Xyi-BD-Fxy" firstAttribute="bottom" secondItem="xeO-qI-u2C" secondAttribute="bottom" constant="30" id="TLU-5T-H0F"/>
+                            <constraint firstItem="Xyi-BD-Fxy" firstAttribute="trailing" secondItem="tPt-c4-Xwp" secondAttribute="trailing" constant="30" id="WgI-DK-cV4"/>
+                            <constraint firstItem="Xyi-BD-Fxy" firstAttribute="trailing" secondItem="Tm0-XQ-Nh5" secondAttribute="trailing" constant="30" id="bcy-n3-fsV"/>
+                            <constraint firstItem="ZBu-az-895" firstAttribute="leading" secondItem="Xyi-BD-Fxy" secondAttribute="leading" constant="70" id="dep-Ct-icw"/>
+                            <constraint firstItem="xeO-qI-u2C" firstAttribute="top" secondItem="ZBu-az-895" secondAttribute="bottom" constant="30" id="gg8-R2-iN0"/>
+                            <constraint firstItem="Xyi-BD-Fxy" firstAttribute="trailing" secondItem="ZBu-az-895" secondAttribute="trailing" constant="70" id="kEU-jD-3M8"/>
+                            <constraint firstItem="ZBu-az-895" firstAttribute="top" secondItem="tPt-c4-Xwp" secondAttribute="bottom" constant="30" id="mOd-Ob-Ja7"/>
+                            <constraint firstItem="Xyi-BD-Fxy" firstAttribute="trailing" secondItem="bIH-XA-s03" secondAttribute="trailing" constant="70" id="yDO-Wl-wKX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Xyi-BD-Fxy"/>
                     </view>
                     <navigationItem key="navigationItem" title="Skills" id="hmb-Uu-PhA"/>
+                    <connections>
+                        <outlet property="heartImageView" destination="bIH-XA-s03" id="4Dr-KU-0Ps"/>
+                        <outlet property="ryuImageView" destination="ZBu-az-895" id="cbb-WK-c1j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UBS-bz-ZY9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="303" y="411"/>
+            <point key="canvasLocation" x="294" y="492"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pzl-Vj-4v3">
